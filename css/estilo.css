@@ -1,0 +1,66 @@
+body{
+    width: 715px;
+    margin: 0 auto;
+    
+}
+
+h1{
+    text-align: center;
+    color: #927FB9;
+    font-family: 'Gill Sans MT';
+    font-size: 60px;
+}
+form{
+    width: 715px;
+    padding: 2%;
+}
+fieldset{
+    border-radius: 9px;
+    border-color: rgb(150, 196, 152);
+    border-width: 4px;
+    font-size: x-large;
+    font-family: Gill Sans MT;
+    color: rgb(33, 95, 44);
+    background-color: rgba(169, 169, 169, 0.445);
+}
+
+input{
+    font-size: 16px;
+    width: 400px;
+    margin-left: 130px;
+}
+button.btn1{
+    font-size: 20px;
+    background-color: rgb(90, 223, 78);
+    border-radius: 9px;
+    color: #ffff;
+    margin-left: 270px;
+    
+}
+
+table{
+    width: 700px;
+    padding-top: 18px;
+    border: 1px solid;
+    margin-left: 20px;
+    background-color: rgb(194, 187, 206);
+}
+
+th{
+    border: 1px solid;
+    color: rgb(88, 88, 88);
+}
+
+button.btn2{
+    background-color: rgb(233, 193, 92);
+    color: #ffff;
+    font-family:'Gill Sans MT';
+    font-size: 15px;
+}
+
+button.btn3{
+    background-color: rgb(218, 32, 32);
+    color: #ffff;
+    font-family:'Gill Sans MT';
+    font-size: 15px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <title>Phone Store</title>  
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+</head>
+<body>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAc193YdrsmfBh2y8kgvXToSxgfWq679mo",
+    authDomain: "alissonoptativa.firebaseapp.com",
+    projectId: "alissonoptativa",
+    storageBucket: "alissonoptativa.appspot.com",
+    messagingSenderId: "947275713156",
+    appId: "1:947275713156:web:1812852944832aeb8f50d1",
+    measurementId: "G-Q6V9ZJSPRP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <h1>PHONE STORE</h1>
+    <div class="container">
+        <div class="row">
+          <h2>Ingrese aquí los datos del dispositivo móvil</h2>
+            <form>
+                <fieldset>
+                    <input type="text" class="form-control" id="serie" placeholder="Número de serie">
+                    <br>
+                    <input type="text" class="form-control" id="descripcion" placeholder="Descripción">
+                    <br>
+                    <input type="text" class="form-control" id="tamaño" placeholder="Tamaño">
+                    <br>
+                    <input type="text" class="form-control" id="so" placeholder="Sistema Operativo">
+                    <br>
+                    <input type="text" class="form-control" id="camara" placeholder="Cámara">
+                    <br>
+                    <input type="text" class="form-control" id="ram" placeholder="Ram">
+                    <br>
+                    <button type="button" id="boton" class="btn1" onclick="guardar()">Guardar</button>
+                </fieldset>
+            </form>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Número de serie</th>
+                        <th>Descripción</th>
+                        <th>Tamaño</th>
+                        <th>Sistema Operativo</th>
+                        <th>Cámara</th>
+                        <th>Ram</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tabla">
+                    </tbody>
+                </table>
+        </div>
+    </div>
+    <script src="js/crud.js"></script>
+</body>
+</html>
